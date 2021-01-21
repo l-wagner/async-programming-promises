@@ -1,5 +1,6 @@
 
 export default function setText(text){
+    console.log("settext")
     const results = document.getElementsByClassName("results")[0].children[0];
     results.innerHTML = text.replace ? text.replace(/([{},:])/g, ' $1 ') : text;
 }
